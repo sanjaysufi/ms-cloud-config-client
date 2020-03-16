@@ -1,0 +1,13 @@
+info:
+  description: Micro Services for Cloud Config Client Service
+spring:
+  application:
+    name: ms-config-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+      username: sanjaysufi
+      password: CloudSufi@fff-2021
+
+  profiles:
+    active: prod
