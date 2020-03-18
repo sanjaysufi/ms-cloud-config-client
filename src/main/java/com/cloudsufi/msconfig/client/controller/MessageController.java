@@ -12,9 +12,15 @@ public class MessageController {
   @Value("${example.message}")
   private String msg;
 
+  @Value("${encrypted.property}")
+  private String testProperty;
+
   @RequestMapping("/message")
   String getMsg() {
-    return this.msg;
+    StringBuilder builder = new StringBuilder();
+    builder.append("global property - ").append(testProperty).append(" || ")
+      .append("local property - ").append(msg).append(" || ");
+    return builder.toString();
   }
 
 }

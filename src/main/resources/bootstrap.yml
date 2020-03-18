@@ -10,4 +10,9 @@ spring:
       password: CloudSufi@fff-2021
 
   profiles:
-    active: prod
+    active: dev
+
+
+  #spring.cloud.gcp.project-id=[YOUR_GCP_PROJECT_ID]
+  #spring.cloud.gcp.credentials.location=file:[LOCAL_PRIVATE_KEY_FILE]
+  #spring.cloud.gcp.credentials.scopes=[SCOPE_1],[SCOPE_2],[SCOPE_3]
